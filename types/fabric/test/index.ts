@@ -1067,3 +1067,17 @@ function sample11() {
    const webglFilterBackend = new fabric.WebglFilterBackend();
    fabric.filterBackend = new fabric.Canvas2dFilterBackend();
 }
+
+function sample12() {
+  const canvas = new fabric.Canvas('c');
+  canvas.setDimensions({
+    width: 100,
+    height: 200
+  })
+  canvas.setDimensions({
+    width: "100%",
+    height: "100%"
+  }, {
+    cssOnly: true
+  })
+}
