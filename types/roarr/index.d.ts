@@ -10,14 +10,14 @@ export default log;
 declare let log: Roarr.RoarrType;
 
 declare namespace Roarr {
-	interface MessageContextType {
+	export interface MessageContextType {
 		logLevel?: number;
 		[name: string]: any;
 	}
 
-	interface SprintfArgumentType { toString(): string; }
+	export interface SprintfArgumentType { toString(): string; }
 
-	interface RoarrType {
+	export interface RoarrType {
 		(
 			context: MessageContextType,
 			message: string,
